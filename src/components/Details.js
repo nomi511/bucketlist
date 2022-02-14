@@ -1,21 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/details.css'
 
 
 
 
-const Details = ({data, id}) => {
+const Details = ({data, id, sidelistdata}) => {
 
     const [detData, setdetData] = useState(data)
     const [newinput, setnewinput] = useState('');
-
     const [licounter, setlicounter] = useState(10);
+    const [title, settitle] = useState("")
 
     let newarr = detData.filter((item)=> item.mainid === id );
-
-
-    
-
     
     const clickhandler = (e) => 
     {
@@ -41,12 +37,21 @@ const Details = ({data, id}) => {
         setdetData(() => detData.filter((itm)=> itm.id !== item.id))
     }
 
+    useEffect(()=>{
 
+        const check = sidelistdata.find((d) => d.id === id)
+        settitle(check.task.toUpperCase())
+        
+
+    }, [id])
 
     
     return ( 
         <div className="detailsection">
+            <h3 className="title">{title}</h3>
             <div className="detailsdiv">
+
+                
             
             { newarr && newarr.length > 0 ? newarr.map((item)=> (
                         <div key={item.id}>

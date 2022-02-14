@@ -56,7 +56,7 @@ function App() {
           <Sidelist sidelist={sidelist} setList={setList} changeid = {changeID} maindelete={maindelete} />
         </div>
         <div className="content">
-          <Details data={DetailsData} id={idparam}/>
+          <Details data={DetailsData} id={idparam} sidelistdata={data}/>
         </div>
       </div>
 

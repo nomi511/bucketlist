@@ -5,6 +5,11 @@
     flex-direction: column;
 }
 
+.title
+{
+    text-align: center;
+}
+
 .detailsdiv
 {
     height: 90%;
