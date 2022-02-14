@@ -1,0 +1,83 @@
+.detailsection
+{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.detailsdiv
+{
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.detailsdiv .item button:hover
+{
+    background-color: orange;
+} 
+
+
+.detailsbottom
+{
+    height: 10%;
+}
+
+.detailsbottom form
+{
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+.detailsbottom form input
+{
+    width: 50%;
+    height: 90%;
+    border-radius: 20px;
+    border: none;
+    padding: 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.detailsbottom form input:hover
+{
+    background-color: rgb(223, 221, 221);
+}
+
+.detailsbottom form button
+{
+    width: 20%;
+    height: 90%;
+    margin-left: 2%;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(25, 125, 207);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.detailsbottom form button:hover
+{
+    background-color: orange;
+}
+
+.completedtask
+{
+    color: red;
+}
+
+#deletebtn
+{
+    background-color: red;
+    width: 5rem;
+    border-radius: 20px;
+}
+
+#deletebtn:hover
+{
+    background-color: orange;
+}
+
+

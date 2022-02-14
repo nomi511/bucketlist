@@ -1,0 +1,99 @@
+.sidebarinput .listheading
+{
+    text-align: center;
+}
+.sidebarinput input
+{
+    width: 100%;
+    border: none;
+    height: 30px;
+    padding: 1.2rem;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sidebarinput input:hover
+{
+    background-color: rgb(223, 221, 221);
+}
+
+.formsearch 
+{
+    display: flex;
+}
+
+.formsearch button
+{
+    border: none;
+    border-radius: 20px;
+    width: 5rem;
+    background-color: rgb(25, 125, 207);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    margin-left: .5rem;
+    color: white;
+}
+
+.formsearch button:hover
+{
+    background-color: rgb(247, 180, 55);
+}
+
+.slist
+{
+    height: 400px;
+    margin-top: 1rem;
+    overflow: scroll;
+}
+
+.slist ul
+{
+    list-style: none;
+    margin-left: -2rem;
+}
+
+
+.item
+{
+    margin-right: .5rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.item:hover
+{
+    background-color: rgb(204, 202, 202);
+}
+
+.item .itemtsk
+{
+    overflow: hidden;
+    width: 85%;
+}
+
+.item button
+{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color: white;
+    text-align: center;
+    border: none;
+    background-color: rgb(25, 125, 207);
+}
+
+
+button:hover
+{
+    background-color: red;
+}
+
+
